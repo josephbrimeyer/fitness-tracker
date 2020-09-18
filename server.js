@@ -3,9 +3,11 @@ const express = require("express");
 const morgan = require("morgan");
 const mongoose = require("mongoose");
 
+const db = require("./models");
+
 // Setting up Express App
 const app = express();
-const PORT = process.env.PORT || 8000;
+const PORT = process.env.PORT || 3000;
 
 app.use(morgan("dev"));
 
