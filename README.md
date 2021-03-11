@@ -3,11 +3,11 @@
 [![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/Naereen/StrapDown.js/blob/master/LICENSE)
 [![Only 32 Kb](https://badge-size.herokuapp.com/Naereen/StrapDown.js/master/strapdown.min.js)](https://github.com/Naereen/StrapDown.js/blob/master/strapdown.min.js)
 
-# Fitness Tracker
+# Burger Time
 
 ## Description
 
-Fitness-tracker is an application that allows a user to track their workouts. The user is able to enter workouts based on cardio or resistance. The application logs multiple exercises on a given day.
+Burger-time is an application that allows a user to add burgers to a list. The burgers are seperated by ready to consume and comsumed. The burgers and their status are persistant between sessions.
 
 ## Table of Contents
 
@@ -24,11 +24,11 @@ Fitness-tracker is an application that allows a user to track their workouts. Th
 ## Installation
 
 To install the necessary dependencies, run the following command:
-The user can launch the application by clicking on the following link: https://josephbrimeyer.github.io/fitness-tracker/
+The user can launch the application by clicking on the following link: https://josephbrimeyer.github.io/burger-time/
 
 ## Usage
 
-Upon launching the application the user is able to create a new workout or continue with an existing workout. The application tracks the exercises, weight, duration, and distance based on the type of exercise selected.
+Upon launching the application the user is able to create a new burger, consume a burger, unconsume a burger, and delete a burger. The application tracks status of the burgers and the data persists across sessions.
 ![Demo](./fitness-tracker.gif)
 
 ## Credits
@@ -57,7 +57,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 ## GitHub
 
-https://www.github.com/josephbrimeyer/readme-generator/
+https://www.github.com/josephbrimeyer/burger-time/
 
 ## Email
 

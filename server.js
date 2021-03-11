@@ -1,15 +1,16 @@
 // Dependencies
 const express = require("express");
-const morgan = require("morgan");
+// const morgan = require("morgan");
 const mongoose = require("mongoose");
+// require("dotenv").config();
 
-const db = require("./models");
+// const db = require("./models");
 
 // Setting up Express App
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-app.use(morgan("dev"));
+// app.use(morgan("dev"));
 
 // Sets up the Express app to handle data parsing
 app.use(express.urlencoded({ extended: true }));
@@ -24,8 +25,8 @@ mongoose.connect(MONGODB_URI, {
 });
 
 // Creating Routes
-require("./routes/api-routes")(app);
-require("./routes/html-routes")(app);
+require("./routes/api-routes.js")(app);
+require("./routes/html-routes.js")(app);
 
 // Starts the server to begin listening
 app.listen(PORT, function () {
