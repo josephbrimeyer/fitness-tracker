@@ -1,8 +1,8 @@
 // Dependencies
 const express = require("express");
-// const morgan = require("morgan");
+const morgan = require("morgan");
 const mongoose = require("mongoose");
-// require("dotenv").config();
+require("dotenv").config();
 
 // const db = require("./models");
 
@@ -29,6 +29,6 @@ require("./routes/api-routes.js")(app);
 require("./routes/html-routes.js")(app);
 
 // Starts the server to begin listening
-app.listen(PORT, function () {
+app.listen(PORT, () => {
   console.log(`App listening on Port ${PORT}!`);
 });
