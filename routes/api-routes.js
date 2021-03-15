@@ -1,4 +1,4 @@
-const Workout = require("../models/fitness.js");
+const Workout = require("../models/fitness");
 const mongojs = require("mongojs");
 const db = require("../models");
 
@@ -6,8 +6,8 @@ const db = require("../models");
 module.exports = (app) => {
   app.get("/api/workouts", (req, res) => {
     db.Workout.find({})
-      .then((data) => {
-        res.json(data);
+      .then((workouts) => {
+        res.json(workouts);
       })
       .catch((err) => {
         res.json(err);
@@ -25,7 +25,7 @@ module.exports = (app) => {
       });
   });
 
-  app.put("/api/workouts/:id", ({ body, params }, res) => {
+  app.put("/api/fitness/:id", ({ body, params }, res) => {
     db.Workout.findByIdAndUpdate(
       params.id,
       { $push: { exercises: body } },
