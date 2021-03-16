@@ -1,4 +1,4 @@
-const Workout = require("../models/fitness");
+const Workout = require("../models/workouts.js");
 const mongojs = require("mongojs");
 const db = require("../models");
 
@@ -16,8 +16,8 @@ module.exports = (app) => {
 
   app.post("/api/workouts", (req, res) => {
     db.Workout.create(req.body)
-      .then((data) => {
-        res.json(data);
+      .then((workouts) => {
+        res.json(workouts);
       })
       .catch((err) => {
         console.log("err", err);
@@ -31,10 +31,21 @@ module.exports = (app) => {
       { $push: { exercises: body } },
       { new: true, runValidators: true }
     )
-      .then((data) => res.json(data))
+      .then((workouts) => res.json(workouts))
       .catch((err) => {
         console.log("err", err);
         res.json(err);
       });
   });
 };
+
+app.get("/api/workouts/range", (req, res) => {
+  db.Workout.find({})
+    .then((workouts) => {
+      res.json(workouts);
+      console.log(workouts);
+    })
+    .catch((err) => {
+      res.status(400).json(err);
+    });
+});

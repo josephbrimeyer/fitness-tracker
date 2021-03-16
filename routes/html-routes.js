@@ -1,5 +1,5 @@
 let path = require("path");
-const Workout = require("../models/fitness");
+const Workout = require("../models/workouts");
 const db = require("../models");
 
 module.exports = (app) => {
