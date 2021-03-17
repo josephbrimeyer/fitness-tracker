@@ -3,11 +3,11 @@
 [![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/Naereen/StrapDown.js/blob/master/LICENSE)
 [![Only 32 Kb](https://badge-size.herokuapp.com/Naereen/StrapDown.js/master/strapdown.min.js)](https://github.com/Naereen/StrapDown.js/blob/master/strapdown.min.js)
 
-# Burger Time
+# Fitness Tracker
 
 ## Description
 
-Burger-time is an application that allows a user to add burgers to a list. The burgers are seperated by ready to consume and comsumed. The burgers and their status are persistant between sessions.
+Fitness Tracker is an application that allows a user to create workouts, continue workouts, and complete workouts.  The data is saved to a database using MongoDB Atlas.  The application stores the data and compiles stats on the dashboard.  
 
 ## Table of Contents
 
@@ -23,17 +23,16 @@ Burger-time is an application that allows a user to add burgers to a list. The b
 
 ## Installation
 
-To install the necessary dependencies, run the following command:
-The user can launch the application by clicking on the following link: https://josephbrimeyer.github.io/burger-time/
+The user can launch the application by clicking on the following link: https://morning-lowlands-25850.herokuapp.com/
 
 ## Usage
 
-Upon launching the application the user is able to create a new burger, consume a burger, unconsume a burger, and delete a burger. The application tracks status of the burgers and the data persists across sessions.
+Upon launching the application the user is able to log their workouts and view stats.
 ![Demo](./fitness-tracker.gif)
 
 ## Credits
 
-Trilogy, express, mongod, mongojs, mongoose, and morgan.
+Trilogy, Heroku, MongoDB Atlas, and Github.
 
 ## License
 
@@ -57,7 +56,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 ## GitHub
 
-https://www.github.com/josephbrimeyer/burger-time/
+https://github.com/josephbrimeyer/fitness-tracker
 
 ## Email
 
